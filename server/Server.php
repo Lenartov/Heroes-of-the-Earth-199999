@@ -4,7 +4,7 @@ include_once "GameSession.php";
 include_once "Coroutine.php";
 
 set_time_limit(0);
-$sock = new SocketServer('heroes-of-the-earth-199999.herokuapp.com', 5656, 20);
+$sock = new SocketServer('localhost', 5656, 20);
 
 $sock->listen();
 
