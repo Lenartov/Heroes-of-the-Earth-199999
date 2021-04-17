@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', function () {
     if(window.location.href.indexOf("board") > -1) {
         // новое соединение открываем, если старое соединение закрыто
         if (socket === undefined || socket.readyState !== 1) {
-            socket = new WebSocket("ws://localhost:5656");
+            socket = new WebSocket("wss://93.75.70.113:5656");
         } else {
             showMessage('Надо закрыть уже имеющееся соединение');
         }
